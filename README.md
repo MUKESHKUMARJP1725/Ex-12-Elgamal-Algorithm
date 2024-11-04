@@ -7,8 +7,13 @@ To implement the ElGamal algorithm for secure key exchange and encryption.
 
 ## Algorithm:
 
-
-
+1. Define public parameters: a prime number 𝑝 and a generator 𝑔.
+2. Each party selects a private key 𝑥 and computes their public key `𝑦 = 𝑔^𝑥 mod 𝑝.`
+3. The sender generates a random number 𝑘 for encryption.
+4. The sender computes the ciphertext components: `𝑐_1 = 𝑔^𝑘 mod 𝑝 and 𝑐_2 = (𝑚𝑒𝑠𝑠𝑎𝑔𝑒⋅𝑦^𝑘) mod 𝑝.`
+5. The sender sends the ciphertext (𝑐1,𝑐2) to the recipient.
+6. The recipient decrypts the message using their private key to compute the shared secret and retrieves the original message.
+7. 
 ## Program:
 ```
 #include <iostream>
