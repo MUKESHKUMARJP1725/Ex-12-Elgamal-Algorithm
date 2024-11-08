@@ -1,20 +1,51 @@
-# Ex-12 Elgamal Algorithm
+# Ex-12 ELGAMAL ALGORITHM
 
-## Date:
+<br>
 
-## Aim:
+## DATE:
+
+<br>
+
+## AIM:
+
+<br>
+
 To implement the ElGamal algorithm for secure key exchange and encryption.
 
-## Algorithm:
+<br>
 
-1. Define public parameters: a prime number 𝑝 and a generator 𝑔.
-2. Each party selects a private key 𝑥 and computes their public key `𝑦 = 𝑔^𝑥 mod 𝑝.`
-3. The sender generates a random number 𝑘 for encryption.
+## ALGORITHM:
+
+<br>
+
+Step 1: Define public parameters: a prime number 𝑝 and a generator 𝑔.
+
+<br>
+
+Step 2: Each party selects a private key 𝑥 and computes their public key `𝑦 = 𝑔^𝑥 mod 𝑝.`
+
+<br>
+
+Step 3: The sender generates a random number 𝑘 for encryption.
+
+<br>
+
 4. The sender computes the ciphertext components: `𝑐_1 = 𝑔^𝑘 mod 𝑝 and 𝑐_2 = (𝑚𝑒𝑠𝑠𝑎𝑔𝑒⋅𝑦^𝑘) mod 𝑝.`
-5. The sender sends the ciphertext (𝑐1,𝑐2) to the recipient.
-6. The recipient decrypts the message using their private key to compute the shared secret and retrieves the original message.
 
-## Program:
+<br>
+
+Step 5: The sender sends the ciphertext `(𝑐1,𝑐2)` to the recipient.
+
+<br>
+
+Step 6: The recipient decrypts the message using their private key to compute the shared secret and retrieves the original message.
+
+<br>
+
+## PROGRAM:
+
+<br>
+
 ```
 #include <iostream>
 #include <cmath>
@@ -81,9 +112,18 @@ int main() {
 }
 ```
 
-## Output:
+<br>
+
+## OUTPUT:
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/9c54a580-2e6f-446d-a1cb-d6a96c7223b6)
 
-## Result:
+<br>
+
+## RESULT:
+
+<br>
+
 The ElGamal algorithm is successfully implemented, and both parties arrive at the same shared secret.
