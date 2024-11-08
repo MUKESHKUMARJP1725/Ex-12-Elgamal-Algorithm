@@ -30,7 +30,7 @@ Step 3: The sender generates a random number 𝑘 for encryption.
 
 <br>
 
-4. The sender computes the ciphertext components: $$𝑐_1$$ = $$𝑔^𝑘$$ mod 𝑝 and $$𝑐_2$$ = (𝑚𝑒𝑠𝑠𝑎𝑔𝑒 ⋅ $$𝑦^𝑘$$ ) mod 𝑝.
+Step 4: The sender computes the ciphertext components: $$𝑐_1$$ = $$𝑔^𝑘$$ mod 𝑝 and $$𝑐_2$$ = (𝑚𝑒𝑠𝑠𝑎𝑔𝑒 ⋅ $$𝑦^𝑘$$ ) mod 𝑝.
 
 <br>
 
